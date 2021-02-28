@@ -293,24 +293,8 @@ add_action( 'after_setup_theme', 'kitapci_custom_logo_setup' );
 	
 	// Sidebar END
 	
-	/*
-	*
-	* YAZI ÖZETİNDEKİ KELİME SAYISI AYARLAMA
-	*
-	*/
-	
-	/*
-	function wpdocs_custom_excerpt_length( $length ) {
-		return 20; // ÖZETTE 20 KELİME OLACAK
-	}
-	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 )
-	*/
-
-	
-	/*
-	*
-	*Numeric Page Navi
-	*
+	/*
+	* Numeric Page Navi
 	*/
 	
 	function page_navi($before = '', $after = '') {
@@ -376,10 +360,8 @@ function olsen_light_excerpt_length( $length ) {
 return get_theme_mod( 'excerpt_length', 55 );
 }
 
-/*
-*
-* Comments
-*
+/*
+* Comments
 */
 
 // Add Class to Comment Reply Link
@@ -400,7 +382,7 @@ function twbs_comment_format($comment, $args, $depth) {
 			</div> <!-- .comment-meta -->
 			<div class="comment-content">
 				<?php if ($comment->comment_approved == '0') { // Awaiting Moderation ?>
-					<em><?php _e('Your comment is awaiting moderation.') ?></em>
+					<em><?php _e('Yorumunuz onay bekliyor.') ?></em>
 				<?php } ?>
 				<div class="comment-text">
 				<?php comment_text(); ?>
