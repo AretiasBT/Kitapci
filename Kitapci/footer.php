@@ -7,7 +7,7 @@
 		<div class="footer-sidebar"><?php dynamic_sidebar('footer-four'); ?></div>
 	</div>
 	<?php if(get_theme_mod('copyright_display') == 'Yes'){ ?>
-	<div class="copyright"><a href="<?php echo get_theme_mod('copyright_adresi') ?>" target="_blank"><img src="<?php echo wp_get_attachment_url(get_theme_mod('copyright_gorseli')) ?>" alt="Copyright Logo"><br><?php echo get_theme_mod('copyright_metni') ?></a><br><?php echo get_theme_mod('copyright_diger') ?></div>
+	<div class="copyright"><a href="<?php echo get_theme_mod('copyright_adresi') ?>" target="_blank"><img src="<?php echo wp_get_attachment_url(get_theme_mod('copyright_gorseli')) ?>" alt="Copyright Logo"><br><?php echo get_theme_mod('copyright_metni') ?></a><br><?php echo get_theme_mod('copyright_diger') ?><br><?php echo 'Altyapı: <a href="https://wordpress.org" target="_blank">WordPress</a> | Tasarım: <a href="https://koddefteri.net" target="_blank">KodDefteri.Net</a> '; ?></div>
 	<?php } ?>
 </div>
 <?php wp_footer() ?>

@@ -17,6 +17,11 @@
 				<div class="logo">
 					<?php if ( function_exists( 'the_custom_logo' ) ) { echo '<a href="'.get_bloginfo('wpurl').'">'.the_custom_logo().'</a>'; } ?>
 				</div>
+				<div class="site-title">
+					<div class="sitetitle"><?php bloginfo('name'); ?></div>
+					<div class="sitedesc"><?php bloginfo('description'); ?></div>
+				</div>
+				<div class="clearfix"></div>
 				<nav id="navigation">
 					<?php 
 					wp_nav_menu( array(

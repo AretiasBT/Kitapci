@@ -26,6 +26,29 @@ a {
 	color: #444444;
 }
 
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.sitetitle {
+    font-size: 32px;
+    color: #0693e3;
+}
+
+.sitedesc {
+    font-size: 18px;
+    color: #88bdff;
+    border-top: 5px solid #88ffff;
+}
+
 
 .article{
     padding: 10px;

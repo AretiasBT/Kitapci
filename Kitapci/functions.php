@@ -1,13 +1,13 @@
 <?php
 
 function my_scripts_method(){ 
-	wp_enqueue_script('custom-script', get_stylesheet_directory_uri().'/js/functions.js', array('jquery'), '1.0.3', true); 
+	wp_enqueue_script('custom-script', get_stylesheet_directory_uri().'/js/functions.js', array('jquery'), '1.0.4', true); 
 
 	} 
 	add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 function stylesheet() {
-    wp_enqueue_style('my-styles', get_stylesheet_directory_uri().'/style.css', array(), '1.1.2' );       
+    wp_enqueue_style('my-styles', get_stylesheet_directory_uri().'/style.css', array(), '1.1.3' );       
 }
 
 add_action('wp_enqueue_scripts', 'stylesheet');
